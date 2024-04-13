@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Corea Nuke Button</title>
+    <title>Reproduzir Vídeo como Plano de Fundo e Áudio separadamente</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <button class="button">
+    <button class="button" id="playButton">
         <div class="lid">
           <span class="side top"></span>
           <span class="side front"></span>
@@ -27,11 +27,15 @@
             </div>
           </div>
         </div>
-      </button>
-      
+    </button>
 
-<audio id="audio" src="https://www.myinstants.com/media/sounds/tactical-nuke.mp3"></audio>
+    <video id="video" style="display: none;">
+        <source src="video_without_audio.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+    </video>
 
-<script src="script.js"></script>
+    <audio id="audio" src="audio.mp3" style="display: none;"></audio>
+
+    <script src="script.js"></script>
 </body>
 </html>
